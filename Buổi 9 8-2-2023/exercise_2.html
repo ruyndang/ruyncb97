@@ -23,7 +23,11 @@
         let title = document.getElementById("title");
         title.style.color = "red";
         let li4 = document.getElementById("old-item");
-        li4.innerHTML = "Fruit Yogurt";
+        li4.remove();
+        let LN = document.getElementById("menu");
+        let newli = document.createElement("li");
+        newli.innerHTML = "Fruit Yogurt";
+        LN.appendChild(newli);
     </script>
 </body>
 </html>
