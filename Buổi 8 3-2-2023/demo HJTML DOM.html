@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo HTML DOM</title>
+</head>
+<body>
+   <h1 id="title">Demo HTML DOM</h1>
+   <p id="paragraph">This is a paragraph</p> 
+   <script>
+    // Tìm kiếm các elment trong tài liệu HTML
+    // và trả về element có id được chỉ định
+    let titleElement = document.getElementById("title");
+
+    console.log(titleElement);
+    console.log(titleElement.innerHTML);
+    titleElement.innerHTML = "Lesson 8 - Demo HTML DOM";
+    titleElement.style.color = "red";
+    let ParagraphElement = document.getElementById("paragraph");
+    ParagraphElement.innerHTML = "With HTML DOM, we can change the content of a HTML tag";
+
+
+   </script>
+</body>
+</html>
