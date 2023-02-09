@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 3 - HTML DOM</title>
+</head>
+<body>
+    <!-- In this exercise, whenevner user clicks on the "btn-action" button,
+        you have to get the value of the company phone number input
+        and set that value to the company owner phone number input.
+     -->
+    <h1>Registration Form</h1>
+    <form action="#">
+        <fieldset>
+            <legend>Company Information</legend>
+            <label>Company Name: </label>
+            <input type="text"><br>
+            <label>Company Address: </label>
+            <input type="text"><br>
+            <label>Company Phone Number: </label>
+            <input type="text">
+        </fieldset>
+        <fieldset>
+            <legend>Owner Information</legend>
+            <label>Owner Name: </label>
+            <input type="text"><br>
+            <label>Owner Address: </label>
+            <input type="text"><br>
+            <label>Owner Phone Number: </label>
+            <input type="text">
+            <button id="btn-action">Same as company phone number</button>
+        </fieldset>
+        <script>
+            document.querySelectorAll("input")[2].id = "companyphonenumber";
+            document.querySelectorAll("input")[5].id = "ownerphonenumber";
+            const btnAction = document.getElementById("btn-action");
+            btnAction.onclick = function(){
+            const companyphoneNo = document.getElementById("companyphonenumber").value;
+            document.getElementById("ownerphonenumber").value = companyphoneNo;
+
+            }
+        </script>
+    </form>
+</body>
+</html>
