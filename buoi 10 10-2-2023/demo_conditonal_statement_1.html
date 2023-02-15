@@ -1,29 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
+
+    <!-- Viet program de ktra mon hoc hien tai. Neu mon hoc la javascript thi in ra "I'm studying Javascript" -->
     <form action="#">
-        Nhap diem: <input id="mark" type="number">
+        course: <input id="course-name" type="text">
         <button id="btn-action">Submit</button>
     </form>
     <script>
         let btnAction = document.getElementById("btn-action");
         btnAction.addEventListener("click", () => {
-            let markinput = document.getElementById("mark");
-            if (parseFloat(markinput) >= 8.5) {
-                console.log("Ban du diem");
+            let courseName = document.getElementById("course-name");
+            if (courseName.value == "Javascript") {
+                console.log("I'm studying Javascript!");
             }
             else {
-                console.log("Ban chua du diem");
+                console.log("I'm not studying Javascript!");
             }
         });
 
     </script>
-</body>
-</html>
 
+</body>
+
+</html>
