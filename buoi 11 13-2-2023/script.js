@@ -43,13 +43,40 @@ let btnAction4 = document.getElementById("btn-action-4")
 btnAction4.addEventListener("click", () => {
     let day = parseInt(document.getElementById("day").value);
     
-    if (day == 2) alert("Monday");
-    else if (day == 3) alert("Tuesday");
-    else if (day == 4) alert("Wednesday");
-    else if (day == 5) alert("Thursday");
-    else if (day == 6) alert("Friday");
-    else if (day == 7) alert("Saturday");
-    else alert("Sunday");
+    // if (day == 2) alert("Monday");
+    // else if (day == 3) alert("Tuesday");
+    // else if (day == 4) alert("Wednesday");
+    // else if (day == 5) alert("Thursday");
+    // else if (day == 6) alert("Friday");
+    // else if (day == 7) alert("Saturday");
+    // else alert("Sunday");
+
+    switch (day) {
+        case 2:
+            alert("Monday");
+            break;
+            case 3:
+            alert("Tuesday");
+            break;
+            case 4:
+            alert("Wednesday");
+            break;
+            case 5:
+            alert("Thursday");
+            break;   
+            case 6:
+            alert("Friday");
+            break;
+            case 7:
+            alert("Saturday");
+            break;
+            default:
+            alert("sunday");
+            break;
+
+
+
+    }
     
 });
 // Bài 5
