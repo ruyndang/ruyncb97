@@ -4,7 +4,7 @@ let array2 = [100, 200, 300, 400];
 let array3 = array2.reverse();
 console.log(array3);
 for (let i in array1){
-    console.log(array3.push(array1[i] + array2[i]));
+   document.write(`${array1[i]}  ${array2[i]} <br>`);
 }
 
 
