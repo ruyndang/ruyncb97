@@ -6,4 +6,4 @@ for (let i in array1){
         array3.push(array1[i] + array2[j]);
     }
 }
-console.log(array3);
+document.write(array3);
