@@ -1,17 +1,16 @@
 // Bài 1
 
-let btnAction1 = document.getElementById("btn-action-1")
-btnAction1.addEventListener("click", () => {
-    let length = parseInt(document.getElementById("length").value);
-    let width = parseInt(document.getElementById("width").value);
-    if (length == width) {
-        alert("Đây là hình vuông");
-    }
-else {
-    alert("Đây là hình chữ nhật");
-}
-});
-
+// let btnAction1 = document.getElementById("btn-action-1")
+// btnAction1.addEventListener("click", () => {
+//     let length = parseInt(document.getElementById("length").value);
+//     let width = parseInt(document.getElementById("width").value);
+//     if (length == width) {
+//         alert("Đây là hình vuông");
+//     }
+// else {
+//     alert("Đây là hình chữ nhật");
+// }
+// });
 // Bài 2
 let btnAction2 = document.getElementById("btn-action-2")
 btnAction2.addEventListener("click", () => {
