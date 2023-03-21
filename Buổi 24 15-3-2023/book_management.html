@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book_managerment</title>
+</head>
+
+<body>
+    <h1>Book Managerment System</h1>
+    <form action="#">
+        <label for="">Name:</label>
+        <input id="book-name" type="text"><br>
+        <label for="">Category: </label>
+        <select name="" id="book-category">
+            <option value="sicence">Sience</option>
+            <option value="novel">Novel</option>
+            <option value="comics">Comics</option>
+        </select> <br>
+
+        <label for="">Price: </label>
+        <input type="number" name="" id="book-price"><br>
+        <label for="">Quantity</label>
+        <input type="number" name="" id="book-quantity"><br>
+        <button type="reset">Reset</button><br>
+
+        <!-- Add new book -->
+        <button id="btn-add" type="button">Add</button><br>
+
+        <!-- Search book -->
+        <label for="">Search: </label>
+        <input type="text" name="" id="search-name">
+        <button id="btn-search" type="button" onclick="searchBook()">Search</button><br>
+
+        <!-- Delete book -->
+        <label for="">Delete: </label>
+        <input type="text" name="" id="delete-name">
+        <button id="btn-delete" type="button" onclick="deleteBook()">Delete</button>
+
+        <!-- Update book -->
+        <button id="btn-update" type="button" onclick="updateBook()">Delete</button>
+
+    </form>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

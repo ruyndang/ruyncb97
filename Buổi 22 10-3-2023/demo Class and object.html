@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Hocvien {
+    // Hàm tạo (Constructor)
+    constructor(sHoTen, sDienthoai, sEmail, dDiem, bGioitinh) {
+        this.Hoten = sHoTen;
+        this.Dienthoai = sDienthoai;
+        this.Email = sEmail;
+        this.Diem = dDiem;
+        this.Gioitinh = bGioitinh;
+    }
+}
+let hv1 = new Hocvien('Hoài', '0905626647', 'Hoai@gmail.com', 9.1, true);
+console.log(hv1);
+console.log('Email:', hv1.Email);
+console.log('Đt:',hv1["Dienthoai"]);
+// lưu thông tin ds lớp
+let dsLop = [];
+dsLop.push(hv1);
+
+let hv2 = new Hocvien("Tèo trần", '0909876543', 'teo@gmail.com');
+dsLop.push(hv2);
+console.log("DS lớp", dsLop);
+
+    </script>
+</body>
+</html>
