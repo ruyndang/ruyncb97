@@ -6,12 +6,15 @@ let birdimg = new Image();
 let hinhnenchinh = new Image();
 let ongtren = new Image();
 let ongduoi = new Image();
+let hinhthua = new Image();
 birdimg.src = "images/bird.png";
 hinhnenchinh.src = "images/nenchinh.png";
 ongtren.src = "images/ongtren.png";
 ongduoi.src = "images/ongduoi.png";
+hinhthua.src = "images/gameover.png";
 let score = 0;
 let khoangcachhaiong = 200; 
+let khoangcachdenongduoi;
 let bird = {
   x: 300,
   y: 250
@@ -23,7 +26,8 @@ ong[0] = {
 };
 
 function run() {
-  context.drawImage(hinhnenchinh, 0, 0);
+context.drawImage(hinhnenchinh, 0, 0);
+context.drawImage(hinhcho, 0, 0);
   context.drawImage(birdimg, bird.x, bird.y);
 
   for (let i = 0; i < ong.length; i++) {
@@ -48,6 +52,7 @@ function run() {
         (bird.y <= ong[i].y + ongtren.height ||
           bird.y + birdimg.height >= ong[i].y + khoangcachdenongduoi))
     ) {
+      context.drawImage(hinhthua, 350, 250);
       return;
     }
   }

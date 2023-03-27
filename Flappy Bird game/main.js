@@ -11,11 +11,10 @@ birdimg.src = "images/bird.png";
 hinhnenchinh.src = "images/nenchinh.png";
 ongtren.src = "images/ongtren.png";
 ongduoi.src = "images/ongduoi.png";
-// đầu tiên là nạp các hình vô nha các bạn :)
-// bước 2 là tạo 1 số biến cần thiết
+
 
 let score = 0;
-let khoangcachhaiong = 140; // khoảng cách này tính từ đầu ống trên đến đầu ống dưới
+let khoangcachhaiong = 200; // khoảng cách này tính từ đầu ống trên đến đầu ống dưới
 let khoangcachdenongduoi; // biến này là khoảng cách từ đầu ống trên đến vị trí đầu ống dưới
 // tạo ra 1 object chim với tọa độ x y là 1 nữa canvas
 let bird = {
