@@ -51,7 +51,7 @@ function play(){
                     game_state = 'End';
                     message.innerHTML = 'Game Over'.fontcolor('red') + '<br>Press Enter To Restart';
                     message.classList.add('messageStyle');
-                    img.style.display = 'none';
+                    img.style.display = 'none'; 
                     sound_die.play();
                     return;
                 }else{
